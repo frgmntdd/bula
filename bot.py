@@ -13,7 +13,7 @@ if not TELEGRAM_TOKEN or not GEMINI_API_KEY:
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
 # Используем надежную и мощную модель
-model = genai.GenerativeModel('gemini-1.5-pro-latest')
+model = genai.GenerativeModel('gemini-2.5-pro')
 
 print("Бот запущен и готов к работе...") # Сообщение, которое мы увидим в логах Render
 
